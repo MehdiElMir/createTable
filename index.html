@@ -9,6 +9,17 @@
   <body onload="createTable();">
     <h1 class="headin-1">Tableau des étudiants</h1>
 
+    <div class="search-box">
+      <form action="" class="search-form" method="get" onsubmit="search(event)">
+        <input
+          type="text"
+          class="search-input"
+          placeholder="search here ..."
+          onchange="search(event)"
+        />
+        <input type="submit" class="btn-search" value="search" />
+      </form>
+    </div>
     <table class="tableau">
       <thead>
         <tr>
